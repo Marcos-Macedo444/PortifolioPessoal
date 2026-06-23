@@ -4,11 +4,14 @@
   "private": true,
   "description": "Portfolio cyberpunk profissional de Marcos Macedo, focado em cybersecurity, infraestrutura e automacao.",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint",
+    "dev": "node scripts/next-runner.cjs dev",
+    "build": "node scripts/next-runner.cjs build",
+    "start": "node scripts/next-runner.cjs start",
+    "lint": "node scripts/next-runner.cjs lint",
     "typecheck": "tsc --noEmit"
+  },
+  "engines": {
+    "node": ">=20.11.0 <25"
   },
   "dependencies": {
     "clsx": "^2.1.1",

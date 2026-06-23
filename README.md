@@ -22,7 +22,7 @@ Portfólio web profissional, responsivo e interativo para Marcos Macêdo, com es
 - Ticker automático de habilidades
 - Carrossel contínuo de habilidades
 - Fundo com grid tecnológico e efeito Matrix leve em canvas
-- Seção Sobre com terminal simulado e placeholder de foto
+- Seção Sobre com terminal simulado e área preparada para foto profissional
 - Seção premium Hack27 com badge, troféu, galeria preparada e competências
 - Projetos com filtros, cards animados e modal de detalhes
 - Stack visual com cards, badges e barras de sinal
@@ -56,6 +56,20 @@ Depois acesse:
 http://localhost:3000
 ```
 
+Se a porta `3000` já estiver ocupada, rode:
+
+```bash
+npm run dev -- -p 3002
+```
+
+E acesse:
+
+```text
+http://localhost:3002
+```
+
+Não abra arquivos como `src/app/page.tsx` diretamente no navegador. O projeto precisa rodar pelo servidor do Next.js para carregar React, Tailwind, CSS e assets em `/_next/static`.
+
 ## Como gerar build
 
 ```bash
@@ -68,6 +82,8 @@ Para iniciar o build localmente:
 npm run start
 ```
 
+O comando `npm run start` só funciona depois de `npm run build`.
+
 ## Lint e TypeScript
 
 ```bash
@@ -75,13 +91,39 @@ npm run lint
 npm run typecheck
 ```
 
+## Node e dependências
+
+- Node.js LTS recomendado: versão 20 ou 22.
+- O projeto também funciona com Node 24 neste ambiente, mas para Vercel/local a faixa configurada é `>=20.11.0 <25`.
+- O npm vem junto com o Node.js.
+- Não é necessário instalar Next.js, Vite, Tailwind ou TypeScript globalmente.
+- Não há arquivo `.env`, `.nvmrc` ou `.node-version` obrigatório.
+- Para versionar e publicar pelo GitHub, instale Git.
+- A Vercel CLI não é obrigatória; o deploy pode ser feito pelo site da Vercel conectado ao GitHub.
+
+## Observação sobre Windows e OneDrive
+
+Os scripts `dev`, `build`, `start` e `lint` chamam `scripts/next-runner.cjs`. Esse runner resolve o caminho real do projeto antes de executar o Next.js e limpa `.next` antes de `dev` e `build`.
+
+Isso evita problemas no Windows quando o mesmo caminho aparece com casing diferente, por exemplo `OneDrive` e `Onedrive`. Esse conflito pode fazer o Webpack carregar módulos duplicados e causar erros como `Cannot read properties of null (reading 'useContext')` durante o prerender.
+
 ## Deploy na Vercel
 
-1. Suba o repositório para o GitHub.
-2. Importe o projeto na Vercel.
-3. Configure o framework como Next.js, caso a Vercel não detecte automaticamente.
-4. Opcionalmente defina `NEXT_PUBLIC_SITE_URL` com a URL final do site.
-5. Faça deploy.
+Este projeto é um app Next.js, então na Vercel use a configuração padrão de Next.js.
+
+1. Crie uma conta em `https://vercel.com`, se ainda não tiver.
+2. Suba este projeto para um repositório no GitHub.
+3. Na Vercel, escolha **Add New Project**.
+4. Importe o repositório do GitHub.
+5. Framework Preset: `Next.js`.
+6. Install Command: `npm install` ou `npm ci`.
+7. Build Command: `npm run build`.
+8. Output Directory: deixe vazio. A Vercel detecta a saída do Next.js automaticamente.
+9. Variável opcional: `NEXT_PUBLIC_SITE_URL` com a URL final do site.
+10. Clique em **Deploy**.
+11. Abra a URL publicada e confira a página inicial, `/robots.txt` e `/sitemap.xml`.
+
+Arquivos que não devem ir para o GitHub já estão no `.gitignore`: `node_modules`, `.next`, `.env*`, logs, builds locais e caches TypeScript.
 
 ## Estrutura de pastas
 
@@ -198,27 +240,6 @@ O `tsconfig.json` usa:
 Essa configuração é normal em projetos Next.js com imports absolutos. Ela permite importar arquivos como `@/components/ui/Button` em vez de usar caminhos relativos longos como `../../components/ui/Button`.
 
 Neste projeto, `baseUrl` deve ser mantido porque o alias `@/*` depende dele e já é usado em vários componentes.
-
-## Deploy no Render
-
-Este projeto é um app Next.js. No Render, crie um **Web Service**, não um Static Site.
-
-Configuração recomendada:
-
-- Runtime: Node.
-- Build Command: `npm ci && npm run build`.
-- Start Command: `npm run start`.
-- Publish Directory: deixe vazio, pois Web Service não usa pasta de publicação estática.
-
-Variáveis de ambiente:
-
-- `NEXT_PUBLIC_SITE_URL`: URL final do site no Render, por exemplo `https://seu-site.onrender.com`.
-
-Observações:
-
-- O `package-lock.json` deve ser versionado para o `npm ci` funcionar no Render.
-- O comando `npm run start` executa `next start`, adequado para servir o build de produção do Next.js.
-- Se preferir usar `npm install` no Render, ajuste o Build Command para `npm install && npm run build`.
 
 ## Observações de segurança
 
