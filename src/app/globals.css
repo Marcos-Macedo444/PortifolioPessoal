@@ -21,8 +21,8 @@ body {
   min-height: 100vh;
   overflow-x: hidden;
   background:
-    linear-gradient(rgba(45, 255, 143, 0.034) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(32, 230, 255, 0.034) 1px, transparent 1px),
+    linear-gradient(rgba(45, 255, 143, 0.024) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(32, 230, 255, 0.024) 1px, transparent 1px),
     #020605;
   background-size: 44px 44px;
   color: var(--foreground);
@@ -69,7 +69,7 @@ textarea:focus-visible {
   }
 
   .cyber-panel {
-    @apply border border-white/10 bg-matrix-panel/75 shadow-glow backdrop-blur-xl;
+    @apply border border-white/10 bg-matrix-panel/70 shadow-panel backdrop-blur-xl;
   }
 
   .scan-surface {
@@ -81,9 +81,10 @@ textarea:focus-visible {
     position: absolute;
     inset: 0;
     pointer-events: none;
-    background: linear-gradient(90deg, transparent, rgba(45, 255, 143, 0.2), transparent);
+    background: linear-gradient(90deg, transparent, rgba(45, 255, 143, 0.12), transparent);
+    opacity: 0.52;
     transform: translateX(-110%);
-    animation: scan 4.6s ease-in-out infinite;
+    animation: scan 7s ease-in-out infinite;
   }
 }
 

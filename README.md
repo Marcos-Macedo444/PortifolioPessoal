@@ -21,14 +21,13 @@ Portfólio web profissional, responsivo e interativo para Marcos Macêdo, com es
 - Barra de progresso de scroll
 - Ticker automático de habilidades
 - Carrossel contínuo de habilidades
-- Fundo cyber com grid sutil, scanner, glow e textura tecnológica leve
+- Fundo cyber com grid sutil, rede de sinais, radar e textura tecnológica leve
 - Seção Sobre com terminal simulado e área preparada para foto profissional
 - Seção premium Hack27 com badge, troféu, galeria preparada e competências
 - Projetos com filtros, cards animados, contexto técnico e links externos
-- Stack visual com cards, badges e barras de sinal
+- Skill matrix compacta por áreas, badges e barras de sinal
 - Estatísticas com contadores animados
 - Timeline profissional
-- Certificações e estudos com estrutura pronta para certificados reais
 - Filosofia profissional em destaque
 - Contato com GitHub, LinkedIn, e-mail, cópia de e-mail e formulário visual
 - Command Palette acessível por botão ou `Ctrl+K`
@@ -143,7 +142,6 @@ public/
     profile/
     projects/
     hack27/
-    certifications/
     backgrounds/
     og/
   icons/
@@ -162,7 +160,6 @@ Arquivos principais preparados:
 - `public/images/hack27/Presentation.jpg`
 - `public/images/hack27/Award.jpg`
 - `public/images/hack27/Award2.jpg`
-- `public/images/certifications/certificate-placeholder.png`
 - `public/images/backgrounds/cyber-grid.png`
 - `public/images/og/portfolio-og.png` para uma imagem social futura
 
@@ -182,7 +179,6 @@ Se quiser trocar caminhos manualmente, edite:
 - Foto complementar: `src/components/sections/About.tsx`.
 - Projetos: `src/data/projects.ts`.
 - Hack27/eventos: `src/components/sections/Hack27.tsx`.
-- Certificações: `src/data/certifications.ts`.
 
 ## Como editar projetos
 
@@ -206,6 +202,7 @@ Edite `src/data/technologies.ts`.
 
 Ali ficam:
 
+- grupos da skill matrix
 - tecnologias da matrix
 - ticker de habilidades
 - carrossel de habilidades
@@ -251,5 +248,5 @@ Neste projeto, `baseUrl` deve ser mantido porque o alias `@/*` depende dele e j�
 ## Personalização recomendada
 
 - Validar o slug final do LinkedIn antes do deploy público.
-- Substituir ou atualizar imagens reais do perfil, Hack27 e certificações quando necessário.
+- Substituir ou atualizar imagens reais do perfil e Hack27 quando necessário.
 - Definir `NEXT_PUBLIC_SITE_URL` no ambiente de produção.

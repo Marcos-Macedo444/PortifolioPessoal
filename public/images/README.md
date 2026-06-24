@@ -35,4 +35,3 @@ Esse arquivo está reservado para uma imagem social futura. Quando for criado, a
 - Foto complementar da seção Sobre: `src/components/sections/About.tsx`
 - Projetos: `src/data/projects.ts`
 - Eventos Hack27: `src/components/sections/Hack27.tsx`
-- Certificações: `src/data/certifications.ts`

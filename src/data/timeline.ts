@@ -26,7 +26,7 @@ export const timeline: TimelineItem[] = [
     title: "Projetos acadêmicos e pessoais",
     period: "Construção",
     description:
-      "Desenvolvimento de automações, aplicações web, estudos em Python e sistemas acadêmicos para resolver problemas concretos e consolidar repertório técnico.",
+      "Desenvolvimento de automações, aplicações web, projetos em Python e sistemas acadêmicos para resolver problemas concretos e consolidar repertório técnico.",
     tags: ["Python", "Automação", "Backend"]
   },
   {

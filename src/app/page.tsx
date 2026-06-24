@@ -3,7 +3,6 @@ import { Footer } from "@/components/layout/Footer";
 import { Navbar } from "@/components/layout/Navbar";
 import { ScrollProgress } from "@/components/layout/ScrollProgress";
 import { About } from "@/components/sections/About";
-import { Certifications } from "@/components/sections/Certifications";
 import { Contact } from "@/components/sections/Contact";
 import { Hack27 } from "@/components/sections/Hack27";
 import { Hero } from "@/components/sections/Hero";
@@ -35,7 +34,6 @@ export default function Home() {
         <TechStack />
         <Stats />
         <Timeline />
-        <Certifications />
         <Philosophy />
         <Contact />
       </main>

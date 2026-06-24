@@ -8,8 +8,7 @@ export const projectFilters = [
   "Web",
   "Educação",
   "Python",
-  "Mobile",
-  "Estudos"
+  "Mobile"
 ];
 
 export const projects: Project[] = [
@@ -44,7 +43,7 @@ export const projects: Project[] = [
   {
     id: "image-processing",
     title: "Processamento Digital de Imagens",
-    category: ["Algoritmos", "Imagem", "Computação", "Python", "Estudos"],
+    category: ["Algoritmos", "Imagem", "Computação", "Python"],
     summary:
       "Implementação manual de algoritmos de processamento de imagens inspirada no MIT 6.009.",
     description:
@@ -74,14 +73,14 @@ export const projects: Project[] = [
     title: "Horas Academy",
     category: ["Educação", "Gestão acadêmica", "Mobile"],
     summary:
-      "Sistema acadêmico para gerenciamento de eventos, certificados e horas complementares.",
+      "Sistema acadêmico para gerenciamento de eventos, inscrições e horas complementares.",
     description:
-      "Sistema acadêmico para gerenciamento de eventos, certificados e horas complementares, criado para facilitar a organização de atividades acadêmicas.",
+      "Sistema acadêmico para gerenciamento de eventos, inscrições e horas complementares, criado para facilitar a organização de atividades acadêmicas.",
     technologies: ["JavaScript", "React Native"],
     features: [
       "Cadastro de eventos",
       "Controle de inscrições",
-      "Emissão de certificados",
+      "Organização de comprovantes",
       "Gestão de horas complementares",
       "Organização acadêmica"
     ],
@@ -89,7 +88,7 @@ export const projects: Project[] = [
       "Fluxos de produto acadêmico",
       "Organização de dados de eventos",
       "Experiência mobile",
-      "Controle de informações para certificados"
+      "Controle de informações acadêmicas"
     ],
     externalUrl: "https://github.com/Marcos-Macedo444/HorasAcademyFront.git",
     externalLabel: "Ver no GitHub",
@@ -98,7 +97,7 @@ export const projects: Project[] = [
   {
     id: "crazy-cine",
     title: "Crazy Cine",
-    category: ["Web", "Backend", "Estudos"],
+    category: ["Web", "Backend"],
     summary:
       "Aplicação web criada para estudar rotas, templates e arquitetura com Flask.",
     description:

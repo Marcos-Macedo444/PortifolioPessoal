@@ -24,9 +24,10 @@ const config: Config = {
         }
       },
       boxShadow: {
-        glow: "0 0 28px rgba(45, 255, 143, 0.18)",
-        cyan: "0 0 34px rgba(32, 230, 255, 0.16)",
-        purple: "0 0 34px rgba(157, 107, 255, 0.14)"
+        panel: "0 18px 48px rgba(0, 0, 0, 0.18)",
+        glow: "0 0 20px rgba(45, 255, 143, 0.1)",
+        cyan: "0 0 24px rgba(32, 230, 255, 0.1)",
+        purple: "0 0 24px rgba(157, 107, 255, 0.09)"
       },
       backgroundImage: {
         "cyber-radial": "linear-gradient(135deg, rgba(45, 255, 143, 0.16) 0%, transparent 28%), linear-gradient(225deg, rgba(32, 230, 255, 0.12) 0%, transparent 30%), linear-gradient(180deg, rgba(2, 6, 5, 0.2) 0%, rgba(12, 20, 24, 0.55) 50%, rgba(2, 6, 5, 0.2) 100%)",
@@ -57,7 +58,7 @@ const config: Config = {
       animation: {
         ticker: "ticker 28s linear infinite",
         "ticker-slow": "ticker 42s linear infinite",
-        scan: "scan 3.2s ease-in-out infinite",
+        scan: "scan 4.8s ease-in-out infinite",
         "pulse-glow": "pulseGlow 2.8s ease-in-out infinite",
         "float-panel": "floatPanel 7s ease-in-out infinite"
       }

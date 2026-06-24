@@ -89,21 +89,21 @@ export function Navbar() {
 
       {mobileOpen ? (
         <motion.div
-          className="border-t border-white/10 bg-matrix-black/95 lg:hidden"
+          className="max-h-[calc(100dvh-4rem)] overflow-y-auto border-t border-white/10 bg-matrix-black/95 lg:hidden"
           initial={{ opacity: 0, height: 0 }}
           animate={{ opacity: 1, height: "auto" }}
           exit={{ opacity: 0, height: 0 }}
         >
-          <div className="container-shell py-4">
-            <div className="grid gap-2">
+          <div className="container-shell py-3">
+            <div className="grid grid-cols-2 gap-2">
               {navigationItems.map((item) => (
                 <a
                   key={item.id}
                   href={item.href}
                   onClick={() => setMobileOpen(false)}
                   className={cn(
-                    "rounded-md px-3 py-3 text-sm text-matrix-muted transition hover:bg-white/5 hover:text-matrix-green",
-                    activeId === item.id && "bg-matrix-green/10 text-matrix-green"
+                    "rounded-md border border-white/10 bg-white/[0.025] px-3 py-3 text-sm text-matrix-muted transition hover:bg-white/5 hover:text-matrix-green",
+                    activeId === item.id && "border-matrix-green/35 bg-matrix-green/10 text-matrix-green"
                   )}
                 >
                   {item.label}
@@ -112,11 +112,31 @@ export function Navbar() {
               <button
                 type="button"
                 onClick={openCommandPalette}
-                className="mt-2 rounded-md border border-matrix-green/30 px-3 py-3 text-left font-mono text-sm text-matrix-green"
+                className="col-span-2 mt-1 rounded-md border border-matrix-green/25 bg-matrix-green/10 px-3 py-3 text-left font-mono text-sm text-matrix-green"
               >
                 <Command className="mr-2 inline h-4 w-4" aria-hidden />
                 Command Palette
               </button>
+            </div>
+            <div className="mt-3 grid grid-cols-2 gap-2 border-t border-white/10 pt-3">
+              <a
+                href={profile.githubUrl}
+                target="_blank"
+                rel="noreferrer"
+                className="rounded-md border border-white/10 px-3 py-3 text-sm text-matrix-muted transition hover:border-matrix-green/35 hover:text-matrix-green"
+              >
+                <Github className="mr-2 inline h-4 w-4" aria-hidden />
+                GitHub
+              </a>
+              <a
+                href={profile.linkedinUrl}
+                target="_blank"
+                rel="noreferrer"
+                className="rounded-md border border-white/10 px-3 py-3 text-sm text-matrix-muted transition hover:border-matrix-cyan/35 hover:text-matrix-cyan"
+              >
+                <Linkedin className="mr-2 inline h-4 w-4" aria-hidden />
+                LinkedIn
+              </a>
             </div>
           </div>
         </motion.div>

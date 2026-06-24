@@ -47,20 +47,19 @@ export type Technology = {
   icon: ElementType;
 };
 
+export type SkillGroup = {
+  title: string;
+  description: string;
+  accent: "green" | "cyan" | "blue" | "purple";
+  icon: ElementType;
+  skills: Technology[];
+};
+
 export type TimelineItem = {
   title: string;
   period: string;
   description: string;
   tags: string[];
-};
-
-export type Certification = {
-  name: string;
-  institution: string;
-  date: string;
-  status: "Em estudo" | "Concluído" | "Planejado";
-  link?: string;
-  image: string;
 };
 
 export type Stat = {

@@ -19,7 +19,7 @@ import {
   ShieldCheck,
   Terminal
 } from "lucide-react";
-import type { Technology } from "@/types";
+import type { SkillGroup, Technology } from "@/types";
 
 export const tickerSkills = [
   "Python",
@@ -76,4 +76,63 @@ export const technologies: Technology[] = [
   { name: "APIs", area: "Integrações", level: "Em evolução", signal: 74, icon: Braces },
   { name: "Segurança de aplicações", area: "Boas práticas", level: "Em evolução", signal: 70, icon: GlobeLock },
   { name: "React Native", area: "Mobile", level: "Em evolução", signal: 62, icon: FaReact }
+];
+
+const skillByName = new Map(technologies.map((technology) => [technology.name, technology]));
+
+function pickSkills(...names: string[]) {
+  return names.map((name) => {
+    const technology = skillByName.get(name);
+
+    if (!technology) {
+      throw new Error(`Skill not found: ${name}`);
+    }
+
+    return technology;
+  });
+}
+
+export const skillGroups: SkillGroup[] = [
+  {
+    title: "Cybersecurity",
+    description: "Base defensiva, leitura de risco e boas práticas aplicadas em produtos e infraestrutura.",
+    accent: "green",
+    icon: ShieldCheck,
+    skills: pickSkills("Cybersecurity", "Segurança de aplicações", "Redes")
+  },
+  {
+    title: "Infraestrutura",
+    description: "Sistemas, serviços e operação em ambiente Linux com foco em estabilidade.",
+    accent: "cyan",
+    icon: ServerCog,
+    skills: pickSkills("Linux", "Terminal", "Infraestrutura")
+  },
+  {
+    title: "Automação",
+    description: "Scripts, rotinas e integrações para reduzir trabalho manual e acelerar entregas.",
+    accent: "purple",
+    icon: Bot,
+    skills: pickSkills("Python", "Automação", "APIs")
+  },
+  {
+    title: "Desenvolvimento",
+    description: "Web, backend e interfaces com atenção a usabilidade, dados e manutenção.",
+    accent: "blue",
+    icon: Braces,
+    skills: pickSkills("JavaScript", "HTML", "CSS", "Flask", "FastAPI", "Backend", "React Native")
+  },
+  {
+    title: "Redes / NOC",
+    description: "Fundamentos de redes, terminal e troubleshooting orientado a operação.",
+    accent: "cyan",
+    icon: Network,
+    skills: pickSkills("Redes", "Linux", "Terminal")
+  },
+  {
+    title: "Ferramentas",
+    description: "Versionamento, colaboração técnica e persistência de dados para projetos reais.",
+    accent: "green",
+    icon: FaGithub,
+    skills: pickSkills("Git", "GitHub", "PostgreSQL")
+  }
 ];
