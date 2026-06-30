@@ -1,6 +1,6 @@
-# Portfolio Image Slots
+# Imagens do Portfólio
 
-Substitua os arquivos mantendo os mesmos nomes para atualizar as imagens sem alterar o código.
+As imagens públicas do projeto ficam nesta pasta. Os caminhos abaixo já estão conectados aos componentes do portfólio.
 
 ## Foto profissional
 
@@ -22,12 +22,6 @@ Os cards de projetos não usam imagens atualmente. Eles usam texto, tecnologias 
 - `public/images/hack27/Award2.jpg`
 
 As imagens do Hack27 usam containers com `object-contain`, então retrato e paisagem ficam visíveis sem cortes agressivos.
-
-## Open Graph
-
-- `public/images/og/portfolio-og.png`
-
-Esse arquivo está reservado para uma imagem social futura. Quando for criado, adicione-o também aos metadados em `src/app/layout.tsx`.
 
 ## Onde editar caminhos manualmente
 

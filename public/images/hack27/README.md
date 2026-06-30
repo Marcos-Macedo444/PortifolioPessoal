@@ -1,6 +1,6 @@
-# Hack27 Images
+# Imagens do Hack27
 
-Coloque aqui as fotos usadas na seção Hack27.
+Fotos usadas na seção Hack27 do portfólio.
 
 Arquivos usados hoje:
 
