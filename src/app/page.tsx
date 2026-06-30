@@ -12,7 +12,7 @@ import { Stats } from "@/components/sections/Stats";
 import { TechStack } from "@/components/sections/TechStack";
 import { Timeline } from "@/components/sections/Timeline";
 import { CommandPalette } from "@/components/ui/CommandPalette";
-import { CyberBackground } from "@/components/ui/CyberBackground";
+import { TechnicalBackground } from "@/components/ui/TechnicalBackground";
 import { CursorGlow } from "@/components/ui/CursorGlow";
 import { IntroOverlay } from "@/components/ui/IntroOverlay";
 import { SkillTicker } from "@/components/ui/SkillTicker";
@@ -22,7 +22,7 @@ export default function Home() {
     <>
       <IntroOverlay />
       <ScrollProgress />
-      <CyberBackground />
+      <TechnicalBackground />
       <CursorGlow />
       <Navbar />
       <main id="main-content" className="relative z-10">

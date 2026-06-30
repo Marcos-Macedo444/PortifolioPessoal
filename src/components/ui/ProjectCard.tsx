@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowUpRight, Github, Linkedin, ScanLine } from "lucide-react";
+import { Activity, ArrowUpRight, Github, Linkedin } from "lucide-react";
 import type { Project } from "@/types";
 import { Button } from "@/components/ui/Button";
 import { TechBadge } from "@/components/ui/TechBadge";
@@ -21,12 +21,12 @@ export function ProjectCard({ project }: ProjectCardProps) {
       viewport={{ once: false, margin: "-80px" }}
       exit={{ opacity: 0, y: -16 }}
       transition={{ duration: 0.35 }}
-      className="cyber-panel group relative overflow-hidden rounded-lg p-5 transition duration-300 hover:-translate-y-0.5 hover:border-matrix-cyan/25 hover:bg-matrix-panel/85 hover:shadow-panel"
+      className="tech-panel group relative overflow-hidden rounded-lg p-5 transition duration-300 hover:-translate-y-0.5 hover:border-matrix-cyan/25 hover:bg-matrix-panel/85 hover:shadow-panel"
     >
       <div className="pointer-events-none absolute inset-x-5 top-0 h-px bg-gradient-to-r from-transparent via-matrix-cyan/35 to-transparent opacity-60" />
       <div className="flex items-start justify-between gap-4">
         <div className="grid h-11 w-11 shrink-0 place-items-center rounded-md border border-matrix-cyan/20 bg-matrix-cyan/10 text-matrix-cyan">
-          <ScanLine className="h-5 w-5" aria-hidden />
+          <Activity className="h-5 w-5" aria-hidden />
         </div>
         <div className="flex flex-wrap justify-end gap-2">
           {project.category.slice(0, 2).map((item) => (

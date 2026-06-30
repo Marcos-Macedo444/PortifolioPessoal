@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { motion } from "framer-motion";
 import { timeline } from "@/data/timeline";
@@ -12,7 +12,7 @@ export function Timeline() {
         <SectionTitle
           eyebrow="timeline"
           title="Jornada técnica em construção"
-          description="Uma evolução que começa no trabalho prático, passa pela transição para tecnologia e chega ao foco atual em NOC, infraestrutura e cybersecurity."
+          description="Uma evolução que começa no trabalho prático, passa pela transição para tecnologia e chega ao foco atual em NOC, infraestrutura e segurança defensiva."
         />
 
         <div className="relative">
@@ -33,7 +33,7 @@ export function Timeline() {
                   <span className="h-2 w-2 rounded-full bg-matrix-green" aria-hidden />
                 </div>
                 <div className={index % 2 === 0 ? "md:pr-10" : "md:col-start-2 md:pl-10"}>
-                  <div className="cyber-panel rounded-lg p-5 text-left">
+                  <div className="tech-panel rounded-lg p-5 text-left">
                     <p className="font-mono text-xs uppercase text-matrix-cyan">{item.period}</p>
                     <h3 className="mt-2 text-xl font-semibold text-matrix-text">{item.title}</h3>
                     <p className="mt-3 leading-7 text-matrix-muted">{item.description}</p>

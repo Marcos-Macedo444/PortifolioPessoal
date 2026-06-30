@@ -43,7 +43,7 @@ export function TechStack() {
     <section id="tecnologias" className="relative py-20 sm:py-24">
       <div className="container-shell">
         <SectionTitle
-          eyebrow="scanning skills"
+          eyebrow="technical skills"
           title="Skill matrix por áreas de atuação"
           description="Competências agrupadas como um painel técnico: menos ruído visual, mais leitura rápida do que sustenta cada projeto."
         />
@@ -89,7 +89,7 @@ export function TechStack() {
           ))}
         </div>
 
-        <div className="cyber-panel mt-8 overflow-hidden rounded-lg py-3 sm:mt-10 sm:py-4">
+        <div className="tech-panel mt-8 overflow-hidden rounded-lg py-3 sm:mt-10 sm:py-4">
           <div className="flex w-max animate-ticker-slow gap-3 px-3 motion-reduce:animate-none sm:gap-4 sm:px-4">
             {carouselItems.map((skill, index) => (
               <span
@@ -126,7 +126,7 @@ function SkillGroupCard({ group, index, compact = false, id, labelledBy }: Skill
       id={id}
       role={compact ? "tabpanel" : undefined}
       aria-labelledby={labelledBy}
-      className="cyber-panel rounded-lg p-4 transition duration-300 hover:border-white/20 hover:bg-matrix-panel/85 sm:p-5"
+      className="tech-panel rounded-lg p-4 transition duration-300 hover:border-white/20 hover:bg-matrix-panel/85 sm:p-5"
       initial={{ opacity: 0, y: 18 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: false, margin: "-80px" }}

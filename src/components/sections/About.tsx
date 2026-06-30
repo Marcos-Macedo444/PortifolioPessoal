@@ -21,7 +21,7 @@ export function About() {
     <section id="sobre" className="relative py-24">
       <div className="container-shell">
         <SectionTitle
-          eyebrow="whoami"
+          eyebrow="perfil"
           title="Perfil técnico com mentalidade de construção"
           description="Um recorte profissional focado em entender sistemas, automatizar rotinas e evoluir em segurança e infraestrutura."
         />
@@ -63,7 +63,7 @@ export function About() {
             viewport={{ once: false, margin: "-80px" }}
             transition={{ duration: 0.5, delay: 0.08 }}
           >
-            <div className="cyber-panel scan-surface overflow-hidden rounded-lg p-3">
+            <div className="tech-panel signal-surface overflow-hidden rounded-lg p-3">
               <div className="relative aspect-[4/3] overflow-hidden rounded-md border border-matrix-cyan/20 bg-matrix-graphite">
                 <Image
                   src="/images/profile/profile2.png"
@@ -76,12 +76,12 @@ export function About() {
             </div>
 
             <TerminalWindow
-              title="profile-scan"
+              title="profile-summary"
               lines={[
-                "whoami",
-                "scan --experience chaveiro-residencial",
+                "profile --summary",
+                "experience --chaveiro-residencial",
                 "status --current-role noc-intern",
-                "focus --cybersecurity infrastructure automation",
+                "focus --defensive-security infrastructure automation",
                 "output: practical mindset + technical evolution"
               ]}
             />

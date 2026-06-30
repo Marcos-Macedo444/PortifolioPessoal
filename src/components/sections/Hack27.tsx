@@ -119,7 +119,7 @@ export function Hack27() {
         />
 
         <motion.article
-          className="cyber-panel scan-surface rounded-lg p-6 shadow-purple"
+          className="tech-panel signal-surface rounded-lg p-6 shadow-purple"
           initial={{ opacity: 0, y: 28 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: false, margin: "-80px" }}

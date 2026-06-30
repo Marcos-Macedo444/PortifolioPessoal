@@ -1,8 +1,8 @@
 # Marcos Macêdo | Portfólio Pessoal
 
-Este é o meu portfólio pessoal como profissional em evolução na área de tecnologia, com foco em infraestrutura, NOC, cybersecurity, automação, backend e projetos reais.
+Este é o meu portfólio pessoal como profissional em evolução na área de tecnologia, com foco em infraestrutura, NOC, segurança defensiva, automação, backend e projetos reais.
 
-A ideia deste projeto foi criar um site que não fosse apenas uma página bonita com meu nome. Eu queria um portfólio com identidade própria, visual forte, atmosfera cyber/hacker profissional e conteúdo organizado para mostrar minha trajetória, meus projetos, minhas habilidades e minhas formas de contato.
+A ideia deste projeto foi criar um site que não fosse apenas uma página bonita com meu nome. Eu queria um portfólio com identidade própria, visual forte, atmosfera técnica inspirada em SOC/NOC e conteúdo organizado para mostrar minha trajetória, meus projetos, minhas habilidades e minhas formas de contato.
 
 O projeto está publicado em:
 
@@ -12,7 +12,7 @@ https://marcosmacedo.dev
 
 ## Sobre O Projeto
 
-Este portfólio foi desenvolvido com Next.js, React, TypeScript e Tailwind CSS. Ele tem uma estética inspirada em ambientes SOC/NOC, cybersecurity, infraestrutura digital, redes, radar, sinais e painéis técnicos.
+Este portfólio foi desenvolvido com Next.js, React, TypeScript e Tailwind CSS. Ele tem uma estética inspirada em ambientes SOC/NOC, segurança defensiva, infraestrutura digital, redes, sinais e painéis técnicos.
 
 O objetivo visual é transmitir tecnologia, segurança, monitoramento, automação e evolução técnica, mas sem cair em uma chuva Matrix genérica. O background foi pensado como uma camada própria do site, com grid 3D, radar, trilhas de rede, pontos de sinal e movimento sutil.
 
@@ -25,7 +25,7 @@ O site também tem formulário de contato funcionando em produção. As mensagen
 - Formulário de contato funcionando com Resend.
 - E-mail de recebimento: `marcosfilipe.macedo@gmail.com`.
 - Domínio próprio `.dev` configurado.
-- Background cyber/SOC finalizado.
+- Background SOC/NOC finalizado.
 - Footer com direitos reservados e crédito de desenvolvimento.
 - Imagens reais de perfil e Hack27 configuradas.
 - Seção de certificações removida para manter o portfólio mais direto e atual.
@@ -34,7 +34,7 @@ O site também tem formulário de contato funcionando em produção. As mensagen
 
 As principais tecnologias usadas neste projeto são:
 
-- Next.js 14
+- Next.js 16
 - React 18
 - TypeScript
 - Tailwind CSS
@@ -53,7 +53,7 @@ Também usei alguns scripts auxiliares em Node.js para deixar o projeto mais est
 - Navbar fixa com blur, menu responsivo e secao ativa.
 - Barra de progresso de scroll.
 - Ticker de habilidades.
-- Background cyber com grid 3D, radar, sinais, trilhas SVG e atmosfera SOC/NOC.
+- Background SOC/NOC com grid 3D, sinais, trilhas SVG e atmosfera técnica.
 - Cursor glow em desktop.
 - Secao Sobre com narrativa profissional.
 - Secao Hack27 com imagens reais, contexto do evento e competencias.
@@ -96,7 +96,7 @@ Cada secao tem uma funcao clara. Eu quis evitar uma pagina baguncada ou purament
 O background atual fica em:
 
 ```text
-src/components/ui/CyberBackground.tsx
+src/components/ui/TechnicalBackground.tsx
 ```
 
 Ele foi criado com CSS, gradientes e SVG leve. Nao usei canvas pesado nem biblioteca 3D, porque eu queria manter performance boa em desktop e mobile.
@@ -104,13 +104,13 @@ Ele foi criado com CSS, gradientes e SVG leve. Nao usei canvas pesado nem biblio
 O conceito visual mistura:
 
 - SOC/NOC futurista
-- radar/scanner
+- radar técnico
 - grid 3D
 - rede de conexoes
 - pontos de sinal
 - energia digital
 - profundidade visual
-- atmosfera cyberpunk profissional
+- atmosfera técnica profissional
 
 As animacoes respeitam `prefers-reduced-motion` usando classes `motion-reduce`.
 
@@ -192,7 +192,7 @@ Para testar localmente com envio real, crie um `.env.local` com as variaveis ver
 Exemplo local:
 
 ```env
-RESEND_API_KEY=sua_chave_real_do_resend
+RESEND_API_KEY=
 CONTACT_TO_EMAIL=marcosfilipe.macedo@gmail.com
 CONTACT_FROM_EMAIL=Marcos Macêdo <contato@marcosmacedo.dev>
 NEXT_PUBLIC_SITE_URL=http://localhost:3000
@@ -362,7 +362,7 @@ src/
       Button.tsx
       CommandPalette.tsx
       CursorGlow.tsx
-      CyberBackground.tsx
+      TechnicalBackground.tsx
       IntroOverlay.tsx
       ProjectCard.tsx
       SectionTitle.tsx
@@ -418,7 +418,7 @@ src/app/api/contact/route.ts
 API server-side que valida e envia mensagens pelo Resend.
 
 ```text
-src/components/ui/CyberBackground.tsx
+src/components/ui/TechnicalBackground.tsx
 ```
 
 Background principal do portfolio.
@@ -487,7 +487,7 @@ src/components/sections/TechStack.tsx
 
 Ela esta organizada por grupos:
 
-- Cybersecurity
+- Segurança defensiva
 - Infraestrutura
 - Automacao
 - Desenvolvimento
@@ -571,7 +571,7 @@ src/app/api/contact/route.ts
 Para alterar o background:
 
 ```text
-src/components/ui/CyberBackground.tsx
+src/components/ui/TechnicalBackground.tsx
 tailwind.config.ts
 ```
 
@@ -616,7 +616,8 @@ O `.gitignore` ignora:
 
 ```text
 .env
-.env*.local
+.env.*
+!.env.example
 node_modules
 .next
 logs
@@ -697,6 +698,6 @@ Tambem mantem links para GitHub, LinkedIn e e-mail.
 
 ## Observacao Final
 
-Este portfolio representa meu momento atual na tecnologia. Ele junta minha experiencia pratica, meus estudos, meus projetos e minha transicao para areas como infraestrutura, NOC, cybersecurity e automacao.
+Este portfolio representa meu momento atual na tecnologia. Ele junta minha experiencia pratica, meus estudos, meus projetos e minha transicao para areas como infraestrutura, NOC, seguranca defensiva e automacao.
 
 Minha intencao e manter este projeto vivo, evoluindo junto com minha carreira, meus projetos e minha identidade profissional.

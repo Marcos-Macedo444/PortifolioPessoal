@@ -30,8 +30,8 @@ const config: Config = {
         purple: "0 0 24px rgba(157, 107, 255, 0.09)"
       },
       backgroundImage: {
-        "cyber-radial": "linear-gradient(135deg, rgba(45, 255, 143, 0.16) 0%, transparent 28%), linear-gradient(225deg, rgba(32, 230, 255, 0.12) 0%, transparent 30%), linear-gradient(180deg, rgba(2, 6, 5, 0.2) 0%, rgba(12, 20, 24, 0.55) 50%, rgba(2, 6, 5, 0.2) 100%)",
-        "scan-line": "linear-gradient(90deg, transparent, rgba(45, 255, 143, 0.34), transparent)"
+        "tech-radial": "linear-gradient(135deg, rgba(45, 255, 143, 0.16) 0%, transparent 28%), linear-gradient(225deg, rgba(32, 230, 255, 0.12) 0%, transparent 30%), linear-gradient(180deg, rgba(2, 6, 5, 0.2) 0%, rgba(12, 20, 24, 0.55) 50%, rgba(2, 6, 5, 0.2) 100%)",
+        "signal-line": "linear-gradient(90deg, transparent, rgba(45, 255, 143, 0.34), transparent)"
       },
       fontFamily: {
         sans: ["Inter", "system-ui", "Segoe UI", "sans-serif"],
@@ -42,7 +42,7 @@ const config: Config = {
           "0%": { transform: "translateX(0)" },
           "100%": { transform: "translateX(-50%)" }
         },
-        scan: {
+        signalSweep: {
           "0%": { transform: "translateX(-110%)" },
           "100%": { transform: "translateX(110%)" }
         },
@@ -79,7 +79,7 @@ const config: Config = {
       animation: {
         ticker: "ticker 28s linear infinite",
         "ticker-slow": "ticker 42s linear infinite",
-        scan: "scan 4.8s ease-in-out infinite",
+        "signal-sweep": "signalSweep 4.8s ease-in-out infinite",
         "grid-flow": "gridFlow 18s linear infinite",
         "radar-sweep": "radarSweep 14s linear infinite",
         "signal-trace": "signalTrace 7s ease-in-out infinite",

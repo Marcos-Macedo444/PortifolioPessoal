@@ -14,7 +14,7 @@ const nodes = [
   { left: "86%", top: "49%", delay: "1.8s", color: "bg-matrix-green" }
 ];
 
-export function CyberBackground() {
+export function TechnicalBackground() {
   return (
     <div className="pointer-events-none fixed inset-0 z-0 overflow-hidden" aria-hidden>
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_18%_16%,rgba(45,255,143,0.20),transparent_22%),radial-gradient(circle_at_78%_18%,rgba(32,230,255,0.18),transparent_24%),radial-gradient(circle_at_52%_64%,rgba(90,124,255,0.15),transparent_34%),linear-gradient(180deg,#020605_0%,#071013_44%,#020605_100%)]" />
@@ -69,7 +69,7 @@ export function CyberBackground() {
 
       <div className="absolute right-[-18rem] top-[8%] h-[34rem] w-[34rem] animate-energy-breath rounded-full bg-[conic-gradient(from_140deg,rgba(45,255,143,0.0),rgba(45,255,143,0.18),rgba(32,230,255,0.12),rgba(157,107,255,0.12),rgba(45,255,143,0.0))] blur-2xl motion-reduce:animate-none" />
       <div className="absolute left-[-16rem] top-[42%] h-[30rem] w-[30rem] rounded-full bg-matrix-blue/[0.10] blur-3xl" />
-      <div className="absolute inset-x-[-12%] top-1/3 h-px animate-scan bg-gradient-to-r from-transparent via-matrix-green/35 to-transparent motion-reduce:animate-none" />
+      <div className="absolute inset-x-[-12%] top-1/3 h-px animate-signal-sweep bg-gradient-to-r from-transparent via-matrix-green/35 to-transparent motion-reduce:animate-none" />
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_0%,transparent_56%,rgba(2,6,5,0.84)_100%)]" />
     </div>
   );

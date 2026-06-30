@@ -68,15 +68,15 @@ textarea:focus-visible {
     @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8;
   }
 
-  .cyber-panel {
+  .tech-panel {
     @apply border border-white/10 bg-matrix-panel/70 shadow-panel backdrop-blur-xl;
   }
 
-  .scan-surface {
+  .signal-surface {
     @apply relative overflow-hidden;
   }
 
-  .scan-surface::after {
+  .signal-surface::after {
     content: "";
     position: absolute;
     inset: 0;
@@ -84,7 +84,7 @@ textarea:focus-visible {
     background: linear-gradient(90deg, transparent, rgba(45, 255, 143, 0.12), transparent);
     opacity: 0.52;
     transform: translateX(-110%);
-    animation: scan 7s ease-in-out infinite;
+    animation: signalSweep 7s ease-in-out infinite;
   }
 }
 

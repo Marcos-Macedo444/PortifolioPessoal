@@ -46,7 +46,7 @@ export function IntroOverlay() {
           role="status"
           aria-live="polite"
         >
-          <div className="cyber-panel scan-surface w-[min(92vw,620px)] rounded-lg p-6">
+          <div className="tech-panel signal-surface w-[min(92vw,620px)] rounded-lg p-6">
             <div className="mb-5 flex items-center gap-3">
               <ShieldCheck className="h-8 w-8 text-matrix-green" aria-hidden />
               <div>

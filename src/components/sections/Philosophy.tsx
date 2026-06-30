@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { motion } from "framer-motion";
 import { Quote } from "lucide-react";
@@ -9,7 +9,7 @@ export function Philosophy() {
     <section className="relative py-24" aria-label="Filosofia profissional">
       <div className="container-shell">
         <motion.div
-          className="cyber-panel scan-surface mx-auto max-w-5xl rounded-lg p-8 text-center sm:p-12"
+          className="tech-panel signal-surface mx-auto max-w-5xl rounded-lg p-8 text-center sm:p-12"
           initial={{ opacity: 0, scale: 0.98 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: false, margin: "-80px" }}

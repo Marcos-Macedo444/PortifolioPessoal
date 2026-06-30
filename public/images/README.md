@@ -13,7 +13,7 @@ Substitua os arquivos mantendo os mesmos nomes para atualizar as imagens sem alt
 
 Os cards de projetos não usam imagens atualmente. Eles usam texto, tecnologias e links externos configurados em `src/data/projects.ts`.
 
-## Eventos e hackathons
+## Eventos técnicos
 
 - `public/images/hack27/Team.jpg`
 - `public/images/hack27/Team2.jpg`

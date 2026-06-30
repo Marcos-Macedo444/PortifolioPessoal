@@ -60,8 +60,8 @@ export function Projects() {
         </motion.div>
 
         {!filteredProjects.length ? (
-          <div className="cyber-panel mt-8 rounded-lg p-8 text-center">
-            <p className="font-mono text-sm text-matrix-green">scan result: empty</p>
+          <div className="tech-panel mt-8 rounded-lg p-8 text-center">
+            <p className="font-mono text-sm text-matrix-green">resultado: nenhum projeto encontrado</p>
             <p className="mt-2 text-matrix-muted">
               Nenhum projeto cadastrado para este filtro ainda. A estrutura está pronta para receber
               novos cards.

@@ -47,7 +47,7 @@ export function TerminalWindow({
   }, [normalizedLines, reducedMotion]);
 
   return (
-    <div className={cn("cyber-panel rounded-lg", className)}>
+    <div className={cn("tech-panel rounded-lg", className)}>
       <div className="flex items-center justify-between border-b border-white/10 px-4 py-3">
         <div className="flex items-center gap-2 text-sm text-matrix-muted">
           <Terminal className="h-4 w-4 text-matrix-green" aria-hidden />

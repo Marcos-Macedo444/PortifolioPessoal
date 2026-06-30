@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { motion } from "framer-motion";
 import type { Stat } from "@/types";
@@ -12,7 +12,7 @@ type StatCardProps = {
 export function StatCard({ stat, index }: StatCardProps) {
   return (
     <motion.article
-      className="cyber-panel rounded-lg p-5"
+      className="tech-panel rounded-lg p-5"
       initial={{ opacity: 0, y: 22 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: false, margin: "-80px" }}

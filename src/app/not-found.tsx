@@ -4,7 +4,7 @@ import { Terminal } from "lucide-react";
 export default function NotFound() {
   return (
     <main className="grid min-h-screen place-items-center bg-matrix-black px-6 text-matrix-text">
-      <section className="cyber-panel max-w-xl rounded-lg p-8 text-center">
+      <section className="tech-panel max-w-xl rounded-lg p-8 text-center">
         <Terminal className="mx-auto mb-4 h-10 w-10 text-matrix-green" aria-hidden />
         <p className="font-mono text-sm uppercase text-matrix-cyan">404 / route not indexed</p>
         <h1 className="mt-3 text-3xl font-semibold">Página não encontrada</h1>

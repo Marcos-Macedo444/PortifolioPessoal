@@ -3,7 +3,7 @@ import type { Project } from "@/types";
 export const projectFilters = [
   "Todos",
   "Automação",
-  "Cybersecurity",
+  "Segurança defensiva",
   "Backend",
   "Web",
   "Educação",
@@ -36,7 +36,7 @@ export const projects: Project[] = [
       "Empacotamento de aplicação para uso local"
     ],
     externalUrl:
-      "https://www.linkedin.com/posts/marcos-mac%C3%AAdo_python-finanaexas-automatizaaexaeto-activity-7123007392362995712-iayb?utm_source=share&utm_medium=member_desktop&rcm=ACoAAED7QjEBiesnTD0IyAJyqByg9HfR5krJvow",
+      "https://www.linkedin.com/posts/marcos-mac%C3%AAdo_python-finanaexas-automatizaaexaeto-activity-7123007392362995712-iayb",
     externalLabel: "Ver publicação",
     externalType: "linkedin"
   },
@@ -64,7 +64,7 @@ export const projects: Project[] = [
       "Convolução e filtros",
       "Raciocínio algorítmico aplicado"
     ],
-    externalUrl: "https://github.com/Marcos-Macedo444/ProcessamentoDeImagens.git",
+    externalUrl: "https://github.com/Marcos-Macedo444/ProcessamentoDeImagens",
     externalLabel: "Ver no GitHub",
     externalType: "github"
   },
@@ -90,7 +90,7 @@ export const projects: Project[] = [
       "Experiência mobile",
       "Controle de informações acadêmicas"
     ],
-    externalUrl: "https://github.com/Marcos-Macedo444/HorasAcademyFront.git",
+    externalUrl: "https://github.com/Marcos-Macedo444/HorasAcademyFront",
     externalLabel: "Ver no GitHub",
     externalType: "github"
   },
@@ -116,7 +116,7 @@ export const projects: Project[] = [
       "Rotas e controllers",
       "Integração entre backend e interface"
     ],
-    externalUrl: "https://github.com/Marcos-Macedo444/CrazyCine-Flask.git",
+    externalUrl: "https://github.com/Marcos-Macedo444/CrazyCine-Flask",
     externalLabel: "Ver no GitHub",
     externalType: "github"
   }

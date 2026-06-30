@@ -16,11 +16,11 @@ export const timeline: TimelineItem[] = [
     tags: ["Fundamentos", "Redes", "Sistemas"]
   },
   {
-    title: "Estagiário NOC em cybersecurity",
+    title: "Estagiário NOC",
     period: "Experiência atual",
     description:
-      "Atuação em ambiente de cybersecurity com foco em monitoramento, infraestrutura, redes, análise, resposta a incidentes e evolução técnica contínua.",
-    tags: ["NOC", "Cybersecurity", "Infraestrutura"]
+      "Atuação em ambiente de segurança defensiva com foco em monitoramento, infraestrutura, redes, análise, resposta a incidentes e evolução técnica contínua.",
+    tags: ["NOC", "Segurança defensiva", "Infraestrutura"]
   },
   {
     title: "Projetos acadêmicos e pessoais",

@@ -17,11 +17,11 @@ export function Stats() {
             <StatCard key={stat.label} stat={stat} index={index} />
           ))}
         </div>
-        <div className="cyber-panel mt-5 rounded-lg p-5">
+        <div className="tech-panel mt-5 rounded-lg p-5">
           <p className="flex items-center gap-3 text-matrix-text">
             <ShieldCheck className="h-5 w-5 text-matrix-green" aria-hidden />
             <span>
-              Foco atual em Cybersecurity, Infraestrutura e Automação para construir soluções
+              Foco atual em segurança defensiva, infraestrutura e automação para construir soluções
               confiáveis, simples e úteis.
             </span>
           </p>

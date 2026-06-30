@@ -34,7 +34,7 @@ export const tickerSkills = [
   "Linux",
   "Terminal",
   "Redes",
-  "Cybersecurity",
+  "Segurança defensiva",
   "Infraestrutura",
   "Automação",
   "Backend",
@@ -44,7 +44,7 @@ export const tickerSkills = [
 ];
 
 export const carouselSkills = [
-  "Cybersecurity",
+  "Defensive Security",
   "Infrastructure",
   "Automation",
   "Backend",
@@ -69,7 +69,7 @@ export const technologies: Technology[] = [
   { name: "Linux", area: "Ambiente e terminal", level: "Em evolução", signal: 72, icon: FaLinux },
   { name: "Terminal", area: "CLI e produtividade", level: "Intermediário", signal: 84, icon: Terminal },
   { name: "Redes", area: "Fundamentos de infraestrutura", level: "Em evolução", signal: 70, icon: Network },
-  { name: "Cybersecurity", area: "Mentalidade defensiva", level: "Em evolução", signal: 76, icon: ShieldCheck },
+  { name: "Segurança defensiva", area: "Mentalidade defensiva", level: "Em evolução", signal: 76, icon: ShieldCheck },
   { name: "Infraestrutura", area: "Sistemas e serviços", level: "Em evolução", signal: 74, icon: ServerCog },
   { name: "Automação", area: "Rotinas e processos", level: "Intermediário", signal: 88, icon: Bot },
   { name: "Backend", area: "Serviços e regras", level: "Em evolução", signal: 76, icon: DatabaseZap },
@@ -94,11 +94,11 @@ function pickSkills(...names: string[]) {
 
 export const skillGroups: SkillGroup[] = [
   {
-    title: "Cybersecurity",
+    title: "Segurança defensiva",
     description: "Base defensiva, leitura de risco e boas práticas aplicadas em produtos e infraestrutura.",
     accent: "green",
     icon: ShieldCheck,
-    skills: pickSkills("Cybersecurity", "Segurança de aplicações", "Redes")
+    skills: pickSkills("Segurança defensiva", "Segurança de aplicações", "Redes")
   },
   {
     title: "Infraestrutura",

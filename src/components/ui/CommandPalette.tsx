@@ -27,7 +27,7 @@ export function CommandPalette() {
       {
         label: "Ir para Sobre",
         description: "Abrir perfil profissional",
-        keywords: "sobre perfil whoami",
+        keywords: "sobre perfil profissional",
         icon: Search,
         action: () => scrollToSection("sobre")
       },
@@ -40,7 +40,7 @@ export function CommandPalette() {
       },
       {
         label: "Ir para Tecnologias",
-        description: "Scanning skills",
+        description: "Ver competências técnicas",
         keywords: "tecnologias stack skills",
         icon: Search,
         action: () => scrollToSection("tecnologias")
@@ -181,7 +181,7 @@ export function CommandPalette() {
             onMouseDown={closePalette}
           >
             <motion.div
-              className="cyber-panel w-full max-w-2xl rounded-lg"
+              className="tech-panel w-full max-w-2xl rounded-lg"
               initial={{ opacity: 0, y: -12, scale: 0.98 }}
               animate={{ opacity: 1, y: 0, scale: 1 }}
               exit={{ opacity: 0, y: -12, scale: 0.98 }}

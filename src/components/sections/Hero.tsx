@@ -44,7 +44,7 @@ export function Hero() {
 
   return (
     <section id="inicio" className="relative min-h-[92vh] overflow-hidden pt-28">
-      <div className="absolute inset-0 bg-cyber-radial" aria-hidden />
+      <div className="absolute inset-0 bg-tech-radial" aria-hidden />
       <div className="absolute inset-x-0 top-20 h-px bg-gradient-to-r from-transparent via-matrix-green/45 to-transparent" aria-hidden />
 
       <div className="container-shell relative grid min-h-[calc(92vh-7rem)] items-center gap-10 pb-14 lg:grid-cols-[1fr_0.82fr]">
@@ -105,7 +105,7 @@ export function Hero() {
           </div>
 
           <div className="mt-10 grid gap-3 sm:grid-cols-3 lg:max-w-2xl">
-            {["NOC Internship", "Cybersecurity", "Infrastructure"].map((status) => (
+            {["NOC Internship", "Defensive Security", "Infrastructure"].map((status) => (
               <div key={status} className="rounded-md border border-white/10 bg-white/[0.03] px-4 py-3">
                 <p className="font-mono text-xs uppercase text-matrix-muted">{status}</p>
               </div>
@@ -120,7 +120,7 @@ export function Hero() {
           transition={{ duration: 0.7, delay: 0.15, ease: "easeOut" }}
         >
           <div className="absolute -inset-4 rounded-[2rem] border border-matrix-green/10 bg-matrix-green/5 blur-2xl" aria-hidden />
-          <div className="cyber-panel scan-surface relative overflow-hidden rounded-2xl p-3 shadow-cyan">
+          <div className="tech-panel signal-surface relative overflow-hidden rounded-2xl p-3 shadow-cyan">
             <div className="relative aspect-[3/4] overflow-hidden rounded-xl border border-matrix-green/30 bg-matrix-graphite">
               <Image
                 src="/images/profile/profile.png"
@@ -134,7 +134,7 @@ export function Hero() {
               <div className="absolute bottom-4 left-4 right-4 rounded-lg border border-white/10 bg-matrix-black/70 p-4 backdrop-blur-md">
                 <p className="font-mono text-xs uppercase text-matrix-green">current status</p>
                 <p className="mt-1 text-sm font-semibold text-matrix-text">
-                  Estagiário NOC em cybersecurity
+                  Estagiário NOC
                 </p>
               </div>
             </div>
